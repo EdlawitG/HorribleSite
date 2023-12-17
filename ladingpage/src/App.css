@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@keyframes blink-animation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blinking-button {
+  animation: blink-animation 1s infinite;
+}
+
+.hover-button {
+  transition: background-color 0.1s ease;
+}
+
+.hover-button:hover::after{
+  content: 'OMG u r calling....'
+}
